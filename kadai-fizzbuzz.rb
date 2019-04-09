@@ -1,12 +1,9 @@
 def fizz_buzz(num)
-  if (num % 15).zero? # 3と5の公倍数?
-    'FizzBuzz'
-  elsif (num % 3).zero? # 3の倍数?
-    'Fizz'
-  elsif (num % 5).zero? # 5の倍数?
-    'Buzz'
-  else # それ以外?
-    num
+  case 0
+  when num % 15 then 'FizzBuzz' # 3と5の公倍数?
+  when num % 3  then 'Fizz'     # 3の倍数?
+  when num % 5  then 'Buzz'     # 5の倍数?
+  else num
   end
 end
 
